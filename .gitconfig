@@ -1,0 +1,20 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#	name = Szepietowski.Krzysztof WKZ
+#	email = WKZ@kmd.dk
+[core]
+	editor = 'C:/Program Files (x86)/Notepad++/notepad++.exe'
+[diff]
+	tool = winmerge
+[difftool]
+	prompt = false
+[difftool "winmerge"]
+	cmd = 'C:/Program Files (x86)/WinMerge/WinMergeU.exe' -r -u -e -dl \"Local\" -dr \"Remote\" \"$LOCAL\" \"$REMOTE\"
+[merge]
+	tool = winmerge
+[mergetool]
+	prompt = false
+[mergetool "winmerge"]
+	trustExitCode = true
+	cmd = 'C:/Program Files (x86)/WinMerge/WinMergeU.exe' -r -u -e -dl \"Local\" -dr \"Remote\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
