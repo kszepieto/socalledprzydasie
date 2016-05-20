@@ -1,0 +1,4 @@
+winmerge compare /e /u /wl /dl %6 /dr %7 %1 %2 
+winmerge merge /e /u /wl /dl %6 /dr %7 %1 %2 %4
+
+kdiff merge %3 --fname %8 %2 --fname %7 %1 --fname %6 -o %4
