@@ -11,10 +11,11 @@
 	prompt = false
 [difftool "winmerge"]
 	cmd = 'C:/Program Files (x86)/WinMerge/WinMergeU.exe' -r -u -e -dl \"Local\" -dr \"Remote\" \"$LOCAL\" \"$REMOTE\"
+
 [merge]
-	tool = winmerge
+	tool = kdiff3
 [mergetool]
 	prompt = false
-[mergetool "winmerge"]
-	trustExitCode = true
-	cmd = 'C:/Program Files (x86)/WinMerge/WinMergeU.exe' -r -u -e -dl \"Local\" -dr \"Remote\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\"
+[mergetool "kdiff3"]
+	path = C:/Program Files/KDiff3/kdiff3.exe
+	trustExitCode = false
